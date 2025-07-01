@@ -237,7 +237,7 @@ DSBridge-Swift has a Keystone that holds everything together.
 
 Here is how a synchronous method call comes in and returns back:
 
-<img src="https://github.com/EdgarDegas/DSBridge-Swift/blob/main/assets/image-20240326210400582.png?raw=true" width="500" />
+<img src="./assets/image-20240326210400582.png?raw=true" width="500" />
 
 ## Resolving Incoming Calls
 
@@ -273,11 +273,11 @@ To explain to you how we can customize JavaScript evaluation, here's how an asyn
 
 Everything is the same before the invocation reaches the dispatcher. The dispatcher returns an empty response immediately after it gets the invocation, so that the webpage gets to continue running. From now on, the synchronous chain breaks.
 
-<img src="https://github.com/EdgarDegas/DSBridge-Swift/blob/main/assets/image-20240326210427127.png?raw=true" width="500" />
+<img src="./assets/image-20240326210427127.png?raw=true" width="500" />
 
 Dispatcher sends the invocation to `Interface` at the same time. But since the way back no longer exists, DSBridge-Swift has to send the repsonse by evaluating JavaScript:
 
-<img src="https://github.com/EdgarDegas/DSBridge-Swift/blob/main/assets/image-20240326210448065.png?raw=true" width="500" />
+<img src="./assets/image-20240326210448065.png?raw=true" width="500" />
 
 The `JavaScriptEvaluator` is in charge of all the messages towards JavaScript, including method calls initiated from native. The default evaluator evaluates JavaScript every 50ms to avoid getting dropped by iOS for evaluating too frequently. 
 

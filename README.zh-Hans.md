@@ -249,7 +249,7 @@ DSBridge-Swift 的 `DSBridge.WebView` 中几乎没有逻辑，逻辑被移放到
 
 这是使用 DSBridge-Swift 时，JavaScript 调用 Native 的同步方法的过程：
 
-<img src="https://github.com/EdgarDegas/DSBridge-Swift/blob/main/assets/image-20240326210400582.png?raw=true" width="500" />
+<img src="./assets/image-20240326210400582.png?raw=true" width="500" />
 
 接下来，我们将介绍其中各个环节的可定制性，你会了解到 DSBridge-Swift 是如何实践开闭原则的。
 
@@ -292,11 +292,11 @@ import class DSBridge.Keystone
 
 调用抵达 Dispatcher 之前的过程与同步方法无异。当 Dispatcher 接收到异步调用时，它会立刻返回一个空的响应，以使网页可以继续运行。至此，同步的返回链条已经断开了。
 
-<img src="https://github.com/EdgarDegas/DSBridge-Swift/blob/main/assets/image-20240326210427127.png?raw=true" width="500" />
+<img src="./assets/image-20240326210427127.png?raw=true" width="500" />
 
 与此同时，它把调用派发给 `Interface`。由于同步返回的通道已经关闭，DSBridge-Swift 将通过执行 JavaScript 的方式发送响应数据：
 
-<img src="https://github.com/EdgarDegas/DSBridge-Swift/blob/main/assets/image-20240326210448065.png?raw=true" width="500" />
+<img src="./assets/image-20240326210448065.png?raw=true" width="500" />
 
 `JavaScriptEvaluator` 负责管理所有发向 JavaScript 的消息，仿照 DSBridge-iOS，它每 50ms 才执行一次 JavaScript 脚本，避免执行过于频繁，被 iOS “丢包”。原来的 DSBridge-iOS 只针对回调（响应来自 JS 的异步调用）做了优化，[Native 主动调用仍然会出现丢包](https://github.com/wendux/DSBridge-IOS/issues/154)；DSBridge-Swift 则对于 Native 的主动调用也做了等待队列。
 
