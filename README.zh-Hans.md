@@ -1,25 +1,7 @@
-# V1.0.6
-优化 dsbridge  
-新增 支持返回纯字符串  
-修复writeScriptCallingBack函数在拼接回调时 字符串中有单引号 ('')导致js端执行报错  
-Fork 自 https://github.com/EdgarDegas/DSBridge-Swift  
-@EdgarDegas  
-
-[^1]
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/EdgarDegas/DSBridge-Swift/assets/12840982/ed61fed2-a356-4772-a0b0-38a39bd0d5a9">
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/EdgarDegas/DSBridge-Swift/assets/12840982/8c1ad005-6866-4ea3-a690-d33e564fde57">
-  <img alt="Logo" src="https://github.com/EdgarDegas/DSBridge-Swift/assets/12840982/e1e1d27c-efe4-401d-87a2-3b5c371e0af9">
-</picture>
-
-[^1]: Designed by [Freepik](https://freepik.com)
 
 DSBridge-Swift 是 [DSBridge-iOS](https://github.com/wendux/DSBridge-IOS) 的一个 Swift 版 fork。它允许开发者在原生和 JavaScript 之间调用彼此的方法。
 
-# 使用
 
-在 [wiki](https://github.com/EdgarDegas/DSBridge-Swift/wiki) 中查看详细文档。
 
 ## 集成
 
@@ -30,6 +12,9 @@ DSBridge 是一个三端可用的 JavaScript Bridge。
 > Swift Package Manager 完全可以与 CocoaPods 等混合使用，没有兼容问题。若只能使用 CocoaPods，请转至 [Objective-C 实现的 DSBridge-iOS](https://github.com/wendux/DSBridge-IOS)。
 
 Android 端集成方式见 [DSBridge-Android](https://github.com/wendux/DSBridge-Android)。
+
+Fork 自 https://github.com/EdgarDegas/DSBridge-Swift  
+@EdgarDegas  
 
 你可以通过 CDN 引入 JavaScript 代码（或下载 JS 文件并添加到工程中以避免网络问题）：
 
@@ -42,6 +27,12 @@ Android 端集成方式见 [DSBridge-Android](https://github.com/wendux/DSBridge
 ```shell
 npm install dsbridge@3.1.4
 ```
+# 版本
+
+### V1.0.8
+优化 dsbridge  
+新增 支持返回纯字符串  
+修复writeScriptCallingBack函数在拼接回调时 字符串中有单引号 ('')导致js端执行报错  
 
 ## 简介
 

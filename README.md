@@ -1,32 +1,6 @@
 
-# V1.0.6
-Optimized dsbridge
-
-New Features Added support for returning plain strings
-
-Fixes Fixed an issue in the writeScriptCallingBack function where single quotes (') in the callback string caused JavaScript execution errors
-
-Forked from https://github.com/EdgarDegas/DSBridge-Swift
-@EdgarDegas
----
-
-[^1]
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/EdgarDegas/DSBridge-Swift/assets/12840982/ed61fed2-a356-4772-a0b0-38a39bd0d5a9">
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/EdgarDegas/DSBridge-Swift/assets/12840982/8c1ad005-6866-4ea3-a690-d33e564fde57">
-  <img alt="Logo" src="https://github.com/EdgarDegas/DSBridge-Swift/assets/12840982/e1e1d27c-efe4-401d-87a2-3b5c371e0af9">
-</picture>
-
-[^1]: Designed by [Freepik](https://freepik.com)
-
-[简体中文版](https://github.com/1245040330/DSBridge-Swift/blob/main/README.zh-Hans.md)
-
 DSBridge-Swift is a [DSBridge-iOS](https://github.com/wendux/DSBridge-IOS) fork in Swift. It allows developers to send method calls back and forth between Swift and JavaScript.
 
-# Usage
-
-Check out [wiki](https://github.com/EdgarDegas/DSBridge-Swift/wiki) for docs.
 
 ## Installation
 
@@ -37,6 +11,9 @@ This repo is a pure Swift version. You can integrate it with Swift Package Manag
 > It's totally OK to use Swift Package Manager together with CocoaPods or other tools. If Swift Package Manager is banned, use [the original Objective-C version DSBridge-iOS](https://github.com/wendux/DSBridge-IOS).
 
 For Android, see [DSBridge-Android](https://github.com/wendux/DSBridge-Android).
+
+Forked from https://github.com/EdgarDegas/DSBridge-Swift
+@EdgarDegas
 
 You can link the JavaScript with CDN:
 
@@ -50,7 +27,16 @@ Or install with npm:
 npm install dsbridge@3.1.4
 ```
 
-# 
+# Releases
+
+### V1.0.8
+Optimized dsbridge
+
+New Features Added support for returning plain strings
+
+Fixes Fixed an issue in the writeScriptCallingBack function where single quotes (') in the callback string caused JavaScript execution errors
+
+---
 
 ## Brief
 
