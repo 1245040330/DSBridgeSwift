@@ -1,4 +1,4 @@
-## [简体中文版文档](https://github.com/1245040330/DSBridgeSwift/blob/main/README.zh-Hans.md)
+## [简体中文版文档](https://github.com/1245040330/DSBridgeSwift/blob/master/README.zh-Hans.md)
 
 
 DSBridge-Swift is a [DSBridge-iOS](https://github.com/wendux/DSBridge-IOS) fork in Swift. It allows developers to send method calls back and forth between Swift and JavaScript.
