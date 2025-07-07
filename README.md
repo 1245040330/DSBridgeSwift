@@ -3,7 +3,6 @@
 
 DSBridge-Swift is a [DSBridge-iOS](https://github.com/wendux/DSBridge-IOS) fork in Swift. It allows developers to send method calls back and forth between Swift and JavaScript.
 
-
 ## Installation
 
 DSBridge is available on both iOS and Android. 
