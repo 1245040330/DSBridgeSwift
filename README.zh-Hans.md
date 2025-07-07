@@ -27,6 +27,11 @@ Fork 自 https://github.com/EdgarDegas/DSBridge-Swift
 ```shell
 npm install dsbridge@3.1.4
 ```
+### swift使用
+添加git地址：https://github.com/1245040330/DSBridgeSwift.git  
+version：1.0.8  
+<img src="./assets/demo.png?raw=true" width="500" />
+
 # 版本
 
 ### V1.0.8

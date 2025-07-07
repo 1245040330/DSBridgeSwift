@@ -29,6 +29,11 @@ Or install with npm:
 npm install dsbridge@3.1.4
 ```
 
+### swift use
+添加git地址：https://github.com/1245040330/DSBridgeSwift.git  
+version：1.0.8  
+<img src="./assets/demo.png?raw=true" width="500" />
+
 # Releases
 
 ### V1.0.8
