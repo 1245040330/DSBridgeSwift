@@ -122,14 +122,48 @@ open class JavaScriptEvaluator: JavaScriptEvaluating {
         with parameter: JSON,
         id: Int
     ) {
+          let  encoded = clStringConvert(parameter)
         let message = """
         {
             "method": "\(functionName)",
             "callbackId": \(id),
-            "data": '\(parameter)'
+            "data": "\(encoded)"
         }
         """
         let script = "window._handleMessageFromNative(\(message))"
         enqueue(script)
+    }
+
+          //判断字符串是否为json
+    func isValidJSON(_ string: String) -> Bool{
+        if let data = string.data(using: .utf8){
+            do{
+                _ = try JSONSerialization.jsonObject(with: data,options: []);
+                return true;
+            }catch{
+                return false;
+            }
+        }
+        return false;
+    }
+    
+    //添加转义
+      func addEscapeCharactersToJSONString(_ string: String) -> String {
+        let encoder = JSONEncoder()
+        if let data = try? encoder.encode(string),
+           let jsonEscaped = String(data: data, encoding: .utf8) {
+            // 去掉两边的双引号（因为 encode(string) 会包一层引号）
+            return String(jsonEscaped.dropFirst().dropLast())
+        }
+        return string
+    }
+    
+    //字符串转换
+    func clStringConvert(_ string:String) -> String{
+        if(isValidJSON(string)){
+            return addEscapeCharactersToJSONString(string);
+        }else{
+            return string;
+        }
     }
 }
