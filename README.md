@@ -30,11 +30,19 @@ npm install dsbridge@3.1.4
 
 ### swift use
 添加git地址：https://github.com/1245040330/DSBridgeSwift.git  
-version：1.0.8  
+version：1.0.9  
 <img src="./assets/demo.png?raw=true" width="500" />
 
 # Releases
 
+### V1.0.9
+Optimized dsbridge
+
+New Features Added support for JavaScript Evaluating to return string, number, [:], and json String
+
+Fixes Fix the issue of JavaScript Evaluating function returning string text with (') error
+
+---
 ### V1.0.8
 Optimized dsbridge
 
@@ -43,6 +51,8 @@ New Features Added support for returning plain strings
 Fixes Fixed an issue in the writeScriptCallingBack function where single quotes (') in the callback string caused JavaScript execution errors
 
 ---
+
+
 
 ## Brief
 

@@ -28,15 +28,24 @@ npm install dsbridge@3.1.4
 ```
 ### swift使用
 添加git地址：https://github.com/1245040330/DSBridgeSwift.git  
-version：1.0.8  
+version：1.0.9  
 <img src="./assets/demo.png?raw=true" width="500" />
 
 # 版本
+
+### V1.0.9
+优化 dsbridge  
+新增 支持JavaScriptEvaluating 返回string 、number、 [:]、jsonString  
+修复JavaScript Evaluating 函数返回带(')字符串文本错误问题  
+
+---
 
 ### V1.0.8
 优化 dsbridge  
 新增 支持返回纯字符串  
 修复writeScriptCallingBack函数在拼接回调时 字符串中有单引号 ('')导致js端执行报错  
+
+---
 
 ## 简介
 
