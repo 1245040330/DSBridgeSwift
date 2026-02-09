@@ -33,6 +33,10 @@ npm install dsbridge@3.1.4
 version：1.0.9  
 <img src="./assets/demo.png?raw=true" width="500" />
 
+targets -> general -> Frameworks,Libraeies,and Embedded Content -> add DSBridge
+
+
+
 # Releases
 
 ### V1.0.9
